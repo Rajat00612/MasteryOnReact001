@@ -6,12 +6,14 @@ export default function Textform(props) {
         // console.log("Uppercase was clicked"+text)
         let newText = text.toUpperCase()
         setText(newText)
+        props.showAlert("Converted to uppercase","Success")
        
     }
     const handleloClick=()=>{
         // console.log("Uppercase was clicked"+text)
         let newText = text.toLowerCase()
         setText(newText)
+        props.showAlert("Converted to lowercase","Success")
     }
    
     const handleonChange=(e)=>{
@@ -21,6 +23,7 @@ export default function Textform(props) {
     const handleClearClick=(e)=>{
         // console.log("on change")
         setText('')
+        props.showAlert("Text cleared","Success")
     }
    
     const [text,setText]=useState("");
@@ -40,7 +43,7 @@ export default function Textform(props) {
   </div>
   <div className="container my-3"  style={{color: props.mode==="dark"?"white":"black"}}>
     <h2>Your Text Summary</h2>
-    <p>{text.split(" ").length} words and {text.length} characters</p>
+    <p>{text.split("  ").length} words and {text.length} characters</p>
     <p>{ 0.08*text.split(" ").length} Minutes read</p>
     
     <h2>Preview </h2>
