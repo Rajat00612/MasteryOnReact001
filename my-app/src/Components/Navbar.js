@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 export default function Navbar(props) {
   return (
-    <nav className={`navbar bg-${props.mode} navbar-expand-lg bg-body-tertiary`} data-bs-theme={props.mode}   >
+    <nav className={`navbar bg-${props.mode} navbar-expand-lg bg-body-tertiary`} data-bs-theme={props.mode} style={{backgroundColor: props.navColor}}   >
     <div className="container-fluid">
       <a className="navbar-brand"href="/">{props.title}</a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@ export default function Navbar(props) {
         </ul>
         <form className="d-flex" role="search">
           <input className="form-control me-2" type="search" placeholder="Search"  aria-label="Search"/>
-          <button className="btn btn-outline-primary" type="submit">Search</button>
+          <button className={`btn btn-${props.btnColor} `}type="submit">Search</button>
         </form>
 
 <div className="dropdown">
