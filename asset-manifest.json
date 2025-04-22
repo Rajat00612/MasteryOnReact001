@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MasteryOnReact001/static/css/main.bc696572.css",
+    "main.js": "/MasteryOnReact001/static/js/main.f08b6a16.js",
+    "static/js/453.ed3810f9.chunk.js": "/MasteryOnReact001/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/MasteryOnReact001/index.html",
+    "main.bc696572.css.map": "/MasteryOnReact001/static/css/main.bc696572.css.map",
+    "main.f08b6a16.js.map": "/MasteryOnReact001/static/js/main.f08b6a16.js.map",
+    "453.ed3810f9.chunk.js.map": "/MasteryOnReact001/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc696572.css",
+    "static/js/main.f08b6a16.js"
+  ]
+}
