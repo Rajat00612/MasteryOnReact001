@@ -1,4 +1,5 @@
 {
+  "homepage": "https://github.com/Rajat00612/MasteryOnReact001",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -7,17 +8,27 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^6.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-router-dom": "^7.5.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+      "predeploy": "npm run build",
+ "deploy": "gh-pages -d build -u \"Rajat Kumar <rajatkumar17141@gmail.com>\"",
+
+   
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "repository": {
+  "type": "git",
+  "url": "https://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@github.com/Rajat00612/MasteryOnReact001.git"
+},
   "eslintConfig": {
     "extends": [
       "react-app",
